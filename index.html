@@ -16,6 +16,15 @@
         <h1>Tic Tac Toe</h1>
         <p class="subtitle">Take turns placing X and O. First to get three in a row wins!</p>
       </div>
+      <div class="mode-switch">
+        <label class="toggle-label">
+          <input type="checkbox" id="modeToggle" />
+          <span class="toggle-track">
+            <span class="toggle-thumb"></span>
+          </span>
+          <span id="modeLabel" class="toggle-text">vs Friend</span>
+        </label>
+      </div>
     </header>
 
     <main class="layout">
@@ -71,6 +80,7 @@
             <li>Tap an empty cell to place your mark</li>
             <li>Get 3 in a row (horizontal, vertical, or diagonal) to win</li>
             <li>If all 9 cells fill up with no winner, it's a draw</li>
+            <li>Toggle <strong>vs AI</strong> to play against the computer!</li>
           </ol>
         </div>
       </aside>
