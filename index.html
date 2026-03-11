@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Tic Tac Toe</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <div class="app-shell">
+    <header class="hero">
+      <div>
+        <p class="eyebrow">Classic Board Game</p>
+        <h1>Tic Tac Toe</h1>
+        <p class="subtitle">Take turns placing X and O. First to get three in a row wins!</p>
+      </div>
+    </header>
+
+    <main class="layout">
+      <section class="panel board-panel">
+        <div class="panel-header">
+          <div>
+            <h2>Game Board</h2>
+            <p class="panel-copy">Tap any empty cell to make your move.</p>
+          </div>
+          <span id="turnBadge" class="badge">Turn: X</span>
+        </div>
+
+        <div id="board" class="board">
+          <button class="cell" data-index="0" type="button"></button>
+          <button class="cell" data-index="1" type="button"></button>
+          <button class="cell" data-index="2" type="button"></button>
+          <button class="cell" data-index="3" type="button"></button>
+          <button class="cell" data-index="4" type="button"></button>
+          <button class="cell" data-index="5" type="button"></button>
+          <button class="cell" data-index="6" type="button"></button>
+          <button class="cell" data-index="7" type="button"></button>
+          <button class="cell" data-index="8" type="button"></button>
+        </div>
+
+        <button id="resetBtn" class="primary-btn" type="button">New Game</button>
+      </section>
+
+      <aside class="panel sidebar">
+        <h2>Scoreboard</h2>
+        <div class="stats">
+          <div class="stat-card">
+            <span class="stat-label">Player X Wins</span>
+            <strong id="xWins">0</strong>
+          </div>
+          <div class="stat-card">
+            <span class="stat-label">Player O Wins</span>
+            <strong id="oWins">0</strong>
+          </div>
+          <div class="stat-card">
+            <span class="stat-label">Draws</span>
+            <strong id="draws">0</strong>
+          </div>
+          <div class="stat-card">
+            <span class="stat-label">Status</span>
+            <strong id="statusText">X goes first. Good luck!</strong>
+          </div>
+        </div>
+
+        <div class="legend">
+          <h3>How to Play</h3>
+          <ol>
+            <li>X always goes first</li>
+            <li>Tap an empty cell to place your mark</li>
+            <li>Get 3 in a row (horizontal, vertical, or diagonal) to win</li>
+            <li>If all 9 cells fill up with no winner, it's a draw</li>
+          </ol>
+        </div>
+      </aside>
+    </main>
+  </div>
+
+  <script src="app.js"></script>
+</body>
+</html>
